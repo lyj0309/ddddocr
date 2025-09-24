@@ -11,7 +11,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 # 仅安装运行期需要的系统依赖（按需增减）
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libstdc++6 libgl1 \
+    libstdc++6 libgl1 libglib2.0-0 libsm6 libxext6 libxrender-dev \
   && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt ./
