@@ -1,0 +1,7 @@
+services:
+  ddddocr:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ddddocr
+    restart: unless-stopped
